@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/ewe-bjdc-domain" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-bjdc-openApi" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-common-utils" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-appsession" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-asynclog" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-cache" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-dbutils" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-executor" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-redismanager" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-restIntegration" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-framework-webmvc" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/ewe-sms-server" vcs="svn" />
+  </component>
+</project>

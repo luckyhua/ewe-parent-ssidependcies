@@ -1,0 +1,36 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ewe-bjdc-openApi:war exploded">
+    <output-path>$PROJECT_DIR$/ewe-bjdc-openApi/target/deploy/${web.war.deployFolderName}</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ewe-bjdc-openApi" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="ewe-framework-webmvc-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="ewe-framework-webmvc" />
+          </element>
+          <element id="archive" name="ewe-bjdc-domain-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="ewe-bjdc-domain" />
+          </element>
+          <element id="archive" name="ewe-sms-server-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="ewe-sms-server" />
+          </element>
+          <element id="archive" name="ewe-framework-restIntegration-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="ewe-framework-restIntegration" />
+          </element>
+          <element id="archive" name="ewe-common-utils-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="ewe-common-utils" />
+          </element>
+          <element id="archive" name="ewe-framework-appsession-0.0.1-SNAPSHOT.jar">
+            <element id="module-output" name="ewe-framework-appsession" />
+          </element>
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ewe-bjdc-openApi/target/deploy/${web.war.deployFolderName}/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ewe-bjdc-openApi/web/Web" />
+    </root>
+  </artifact>
+</component>

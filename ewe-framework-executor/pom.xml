@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ewe</groupId>
+  <artifactId>ewe-framework-executor</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ewe-framework-executor</name>
+  <description>the async executor framework</description>
+  
+    
+  <properties>
+  	<redismanager.version>0.0.1-SNAPSHOT</redismanager.version>
+  	<utils.version>0.0.1-SNAPSHOT</utils.version>
+  </properties>
+  
+  
+  <dependencies>
+  		<!-- log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.12</version>
+		</dependency>
+		<!-- slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		
+	<dependency>
+  		<groupId>com.ewe</groupId>
+	  	<artifactId>ewe-framework-redismanager</artifactId>
+	  	<version>${redismanager.version}</version>
+  	</dependency>
+	  <dependency>
+		  <groupId>junit</groupId>
+		  <artifactId>junit</artifactId>
+		  <version>4.11</version>
+		  <scope>test</scope>
+	  </dependency>
+  </dependencies>
+</project>

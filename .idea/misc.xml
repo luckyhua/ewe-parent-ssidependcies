@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/ewe-bjdc-openApi" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-bjdc-openApi/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-bjdc-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-common-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-asynclog/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-cache/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-dbutils/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-executor/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-redismanager/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-restIntegration/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-webmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-sms-server/pom.xml" />
+        <option value="$PROJECT_DIR$/ewe-framework-appsession/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="mySupportsUserInfoFilter" value="true" />
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ewe-bjdc-domain/ewe-bjdc-domain.iml" filepath="$PROJECT_DIR$/ewe-bjdc-domain/ewe-bjdc-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-bjdc-openApi/ewe-bjdc-openApi.iml" filepath="$PROJECT_DIR$/ewe-bjdc-openApi/ewe-bjdc-openApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-common-utils/ewe-common-utils.iml" filepath="$PROJECT_DIR$/ewe-common-utils/ewe-common-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-appsession/ewe-framework-appsession.iml" filepath="$PROJECT_DIR$/ewe-framework-appsession/ewe-framework-appsession.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-asynclog/ewe-framework-asynclog.iml" filepath="$PROJECT_DIR$/ewe-framework-asynclog/ewe-framework-asynclog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-cache/ewe-framework-cache.iml" filepath="$PROJECT_DIR$/ewe-framework-cache/ewe-framework-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-dbutils/ewe-framework-dbutils.iml" filepath="$PROJECT_DIR$/ewe-framework-dbutils/ewe-framework-dbutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-executor/ewe-framework-executor.iml" filepath="$PROJECT_DIR$/ewe-framework-executor/ewe-framework-executor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-redismanager/ewe-framework-redismanager.iml" filepath="$PROJECT_DIR$/ewe-framework-redismanager/ewe-framework-redismanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-restIntegration/ewe-framework-restIntegration.iml" filepath="$PROJECT_DIR$/ewe-framework-restIntegration/ewe-framework-restIntegration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-framework-webmvc/ewe-framework-webmvc.iml" filepath="$PROJECT_DIR$/ewe-framework-webmvc/ewe-framework-webmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-parent-ssidependcies.iml" filepath="$PROJECT_DIR$/ewe-parent-ssidependcies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ewe-sms-server/ewe-sms-server.iml" filepath="$PROJECT_DIR$/ewe-sms-server/ewe-sms-server.iml" />
+    </modules>
+  </component>
+</project>

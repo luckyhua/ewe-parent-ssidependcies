@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.ewe</groupId>
+	<artifactId>ewe-framework-cache</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>ewe-framework-cache</name>
+	<description>the abstract redis cache framework</description>
+	
+	<properties>
+		<redismanager.version>0.0.1-SNAPSHOT</redismanager.version>
+	</properties>
+	
+	<parent>
+		<groupId>com.ewe</groupId>
+		<artifactId>ewe-parent-ssidependcies</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+	
+	<dependencies>
+		<dependency>
+			<groupId>com.ewe</groupId>
+		  	<artifactId>ewe-framework-redismanager</artifactId>
+		  	<version>${redismanager.version}</version>
+		</dependency>
+	</dependencies>
+
+</project>

@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ewe</groupId>
+  <artifactId>ewe-framework-redismanager</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>ewe-framework-redismanager</name>
+  <description>this is the management system to redis
+	  ,includ redis connection pool 
+	  ,and some other redis management function
+	  may be management of redis cluster after soon!
+  </description>
+
+	<properties>
+		<!-- junit version -->
+		<junit.version>4.4</junit.version>
+		<jedis.version>2.7.2</jedis.version>
+	</properties>
+
+	<dependencies>
+		<!-- jedis dependency used to access redis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>${jedis.version}</version>
+		</dependency>
+		<!-- slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<!-- test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- test end! -->
+	</dependencies>
+</project>

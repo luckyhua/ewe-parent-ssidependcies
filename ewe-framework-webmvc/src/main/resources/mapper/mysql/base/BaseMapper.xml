@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.mysql.base.BaseMapper">
+
+	<sql id="sortConfig">
+		<if test="sortInfo.orderBy != null">
+			${sortInfo.orderBy}
+		</if>
+	</sql>
+
+	<sql id="pageConfig">
+		limit
+		#{pageInfo.pageBegin},#{pageInfo.pageSize}
+	</sql>
+	
+	<sql id="dateConfig">
+		<if test="dateDetails != null">
+			<choose>
+				<when test="dateDetails.type == 1">
+					and SUBSTR(${dateDetails.dateColumn},1,4) =
+					#{dateDetails.dateBeginValue}
+				</when>
+				<when test="dateDetails.type == 2">
+					and SUBSTR(${dateDetails.dateColumn},1,7) =
+					#{dateDetails.dateBeginValue}
+				</when>
+				<when test="dateDetails.type == 3">
+					and SUBSTR(${dateDetails.dateColumn},1,10) =
+					#{dateDetails.dateBeginValue}
+				</when>
+				<when test="dateDetails.type == 4">
+					and SUBSTR(${dateDetails.dateColumn},1,4) between
+					#{dateDetails.dateBeginValue} and #{dateDetails.dateEndValue}
+				</when>
+				<when test="dateDetails.type == 5">
+					and SUBSTR(${dateDetails.dateColumn},1,7) between
+					#{dateDetails.dateBeginValue} and #{dateDetails.dateEndValue}
+				</when>
+				<when test="dateDetails.type == 6">
+					and SUBSTR(${dateDetails.dateColumn},1,10) between
+					#{dateDetails.dateBeginValue} and #{dateDetails.dateEndValue}
+				</when>
+			</choose>
+		</if>
+	</sql>
+
+</mapper>

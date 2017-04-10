@@ -1,0 +1,131 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ewe</groupId>
+  <artifactId>ewe-bjdc-openApi</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>ewe-bjdc-openApi</name>
+  <description>the bjdc open api</description>
+
+  <properties>
+		<!-- the web mvc framework version -->
+		<webmvc.version>0.0.1-SNAPSHOT</webmvc.version>
+		<!-- session system version -->
+		<session.version>0.0.1-SNAPSHOT</session.version>
+		<!-- domain version -->
+		<domain.version>0.0.1-SNAPSHOT</domain.version>
+		<!-- ewe common utils -->
+		<utils.version>0.0.1-SNAPSHOT</utils.version>
+		<!-- ewe send sms -->
+		<sms.version>0.0.1-SNAPSHOT</sms.version>
+	</properties>
+
+	<dependencies>
+
+
+		<!-- java servlet api -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- servlet api end! -->
+
+		<!-- all the po -->
+		<!-- this is the base framework of the webmvc -->
+		<dependency>
+			<groupId>com.ewe</groupId>
+			<artifactId>ewe-framework-webmvc</artifactId>
+			<version>${webmvc.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.ewe</groupId>
+			<artifactId>ewe-bjdc-domain</artifactId>
+			<version>${domain.version}</version>
+		</dependency>
+
+		<!-- this is the system use send sms -->
+		<dependency>
+			<groupId>com.ewe</groupId>
+			<artifactId>ewe-sms-server</artifactId>
+			<version>${sms.version}</version>
+		</dependency>
+
+		<!-- rest sender -->
+		<dependency>
+			<groupId>com.ewe</groupId>
+			<artifactId>ewe-framework-restIntegration</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
+		<!-- sync log -->
+		<!--<dependency>-->
+			<!--<groupId>com.ewe</groupId>-->
+			<!--<artifactId>ewe-framework-asynclog</artifactId>-->
+			<!--<version>0.0.1-SNAPSHOT</version>-->
+		<!--</dependency>-->
+
+		<!-- ewe common utils -->
+		<dependency>
+			<groupId>com.ewe</groupId>
+			<artifactId>ewe-common-utils</artifactId>
+			<version>${utils.version}</version>
+		</dependency>
+
+		<!-- this is the session system -->
+		<dependency>
+			<groupId>com.ewe</groupId>
+			<artifactId>ewe-framework-appsession</artifactId>
+			<version>${session.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>bjdcApi</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.1.1</version>
+				<configuration>
+					<failOnMissingWebXml>true</failOnMissingWebXml>
+					<webappDirectory>target/deploy/${web.war.deployFolderName}
+					</webappDirectory>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<update>true</update>
+					<charset>utf-8</charset>
+					<url>http://localhost:8080/manager/text</url>
+					<server>tomcat7</server>
+					<port>6666</port>
+					<uriEncoding>UTF-8</uriEncoding>
+					<path>/bjdcApi</path>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
